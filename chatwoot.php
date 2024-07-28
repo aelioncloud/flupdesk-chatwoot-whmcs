@@ -439,14 +439,6 @@ function chatwoot_TestConnection(array $params)
 
         curl_close($ch);
     } catch (Exception $e) {
-        logModuleCall(
-            'chatwoot',
-            __FUNCTION__,
-            $params,
-            $e->getMessage(),
-            $e->getTraceAsString()
-        );
-
         $success = false;
         $message = $e->getMessage();
     }
