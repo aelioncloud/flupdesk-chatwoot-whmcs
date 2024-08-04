@@ -176,6 +176,10 @@ function chatwoot_ConfigOptions()
             'Type' => 'yesno',
             'Description' => 'Ocultar mensagem de exclusão para o agente'
         ),
+        'agents_limit' => array(
+            'Type' => 'text',
+            'Description' => 'Limite de agentes'
+        ),
     );
 }
 
@@ -392,6 +396,9 @@ function chatwoot_ChangePackage(array $params)
                 'agent_conversation_viewed' => ($params['configoption21'] == 'on'),
                 'hide_unassigned_for_agent' => ($params['configoption22'] == 'on'),
                 'hide_delete_message_for_agent' => ($params['configoption23'] == 'on'),
+            ),
+            'limits' => array(
+                'agents' => $params['configoption24']
             ),
         ),
         'method' => 'PATCH',
