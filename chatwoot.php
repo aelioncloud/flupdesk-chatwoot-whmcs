@@ -132,10 +132,10 @@ function chatwoot_ConfigOptions()
 //            'Type' => 'yesno',
 //            'Description' => 'Habilitar inserção de artigo na resposta'
 //        ),
-        'inbox_view' => array(
-            'Type' => 'yesno',
-            'Description' => 'Habilitar visualização da caixa de entrada'
-        ),
+//        'inbox_view' => array(
+//            'Type' => 'yesno',
+//            'Description' => 'Habilitar visualização da caixa de entrada'
+//        ),
         'linear_integration' => array(
             'Type' => 'yesno',
             'Description' => 'Habilitar integração linear'
@@ -381,17 +381,17 @@ function chatwoot_ChangePackage(array $params)
                 'custom_reply_domain' => false,
                 'message_reply_to' => ($params['configoption14'] == 'on'),
                 'insert_article_in_reply' => true,
-                'inbox_view' => ($params['configoption15'] == 'on'),
-                'linear_integration' => ($params['configoption16'] == 'on'),
-                'hide_all_chats_for_agent' => ($params['configoption17'] == 'on'),
-                'hide_contacts_for_agent' => ($params['configoption18'] == 'on'),
-                'hide_filters_for_agent' => ($params['configoption19'] == 'on'),
-                'send_agent_name_in_whatsapp_message' => ($params['configoption20'] == 'on'),
+                'inbox_view' => true,
+                'linear_integration' => ($params['configoption15'] == 'on'),
+                'hide_all_chats_for_agent' => ($params['configoption16'] == 'on'),
+                'hide_contacts_for_agent' => ($params['configoption17'] == 'on'),
+                'hide_filters_for_agent' => ($params['configoption18'] == 'on'),
+                'send_agent_name_in_whatsapp_message' => ($params['configoption19'] == 'on'),
                 'read_message' => true,
-                'disable_whatsapp_messaging_window' => ($params['configoption21'] == 'on'),
-                'agent_conversation_viewed' => ($params['configoption22'] == 'on'),
-                'hide_unassigned_for_agent' => ($params['configoption23'] == 'on'),
-                'hide_delete_message_for_agent' => ($params['configoption24'] == 'on'),
+                'disable_whatsapp_messaging_window' => ($params['configoption20'] == 'on'),
+                'agent_conversation_viewed' => ($params['configoption21'] == 'on'),
+                'hide_unassigned_for_agent' => ($params['configoption22'] == 'on'),
+                'hide_delete_message_for_agent' => ($params['configoption23'] == 'on'),
             ),
         ),
         'method' => 'PATCH',
