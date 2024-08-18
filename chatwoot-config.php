@@ -68,10 +68,6 @@ $features = array(
         'Type' => 'yesno',
         'Description' => 'Ocultar todas as conversas para o agente'
     ),
-    'hide_contacts_for_agent' => array(
-        'Type' => 'yesno',
-        'Description' => 'Ocultar contatos para o agente'
-    ),
     'hide_filters_for_agent' => array(
         'Type' => 'yesno',
         'Description' => 'Ocultar filtros para o agente'
@@ -87,10 +83,6 @@ $features = array(
     'agent_conversation_viewed' => array(
         'Type' => 'yesno',
         'Description' => 'Habilitar visualização de conversa pelo agente'
-    ),
-    'hide_unassigned_for_agent' => array(
-        'Type' => 'yesno',
-        'Description' => 'Ocultar não atribuídos para o agente'
     ),
     'hide_delete_message_for_agent' => array(
         'Type' => 'yesno',
@@ -151,7 +143,7 @@ $features_default = array(
     'mobile_v2' => array(
         'Default' => 'on',
         'Type' => 'yesno',
-        'Description' => 'Habilitar versão móvel 2'
+        'Description' => 'Habilitar versão móvel v2'
     ),
     'custom_reply_email' => array(
         'Default' => 'off',
@@ -182,5 +174,15 @@ $features_default = array(
         'Default' => 'on',
         'Type' => 'yesno',
         'Description' => 'Habilitar leitura de mensagem'
+    ),
+	'hide_unassigned_for_agent' => array(
+		'Default' => 'off',
+        'Type' => 'yesno',
+        'Description' => 'Ocultar não atribuídos para o agente'
+    ),
+    'hide_contacts_for_agent' => array(
+		'Default' => 'off',
+        'Type' => 'yesno',
+        'Description' => 'Ocultar contatos para o agente'
     ),
 );
